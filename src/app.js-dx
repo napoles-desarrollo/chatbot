@@ -1,0 +1,50 @@
+const express = require('express');
+const { CONFIG } = require('./config');
+const { normalizar } = require('./utils/helpers');
+
+// Importamos Servicios
+const CacheSucursales = require('./services/sucursales');
+const GestorEstados = require('./services/state');
+const GestorBaseDatos = require('./services/database');
+const ChatwootClient = require('./services/chatwoot');
+
+// Importamos Handler
+const ManejadorComandos = require('./handlers/commands');
+
+const app = express();
+app.use(express.json());
+
+// Inicialización
+const cacheSucursales = new CacheSucursales();
+const gestorEstados = new GestorEstados();
+const gestorBD = new GestorBaseDatos(CONFIG.DB);
+const chatwootClient = new ChatwootClient(CONFIG.CHATWOOT_API_URL, CONFIG.BOT_TOKEN);
+
+const manejadorComandos = new ManejadorComandos(chatwootClient, cacheSucursales, gestorEstados, gestorBD);
+
+// Precarga de Datos
+cacheSucursales.obtenerDatos().catch(e => console.error('⚠️ Error precarga:', e.message));
+
+// Webhook
+app.post('/webhook', async (req, res) => {
+    const { event, message_type, content, conversation, account } = req.body;
+    
+    // Filtros básicos
+    if (event !== "message_created") return res.status(200).send('ignorado');
+    if (message_type === "outgoing") return res.status(200).send('ignorado');
+    if (conversation?.assignee_id) return res.status(200).send('agente_atendiendo');
+    if (!account?.id || !conversation?.id) return res.status(400).send('error_datos');
+
+    try {
+        await manejadorComandos.procesarMensaje(account.id, conversation.id, normalizar(content), content);
+        res.status(200).send('ok');
+    } catch (e) {
+        console.error('💥 Error Webhook:', e);
+        res.status(500).send('error');
+    }
+});
+
+app.get('/health', (req, res) => res.json({ status: 'ok', version: 'Modular' }));
+
+const PORT = process.env.PORT || 4000;
+app.listen(PORT, () => console.log(`🚀 Bot Modular listo en puerto ${PORT}`));

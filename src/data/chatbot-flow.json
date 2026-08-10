@@ -1,0 +1,212 @@
+{
+    "1": {
+        "step_id": "1",
+        "objective": "Iniciar conversación",
+        "user_action": "Usuario escribe saludo, audio o texto",
+        "bot_response": "💙Bienvenido a Laboratorios Napoles.\n\nSoy Napolito, tu asistente virtual y estoy aquí para ayudarte.🤖\n\nPor favor, compártenos tu ubicación o escribe tu ciudad/código postal.",
+        "validation_rule": "Verificar conexión y disponibilidad",
+        "required_data": "",
+        "next_step": "Solicitar ubicación",
+        "fallback": "Reiniciar conversación automáticamente"
+    },
+    "2": {
+        "step_id": "2",
+        "objective": "Obtener contexto de zona",
+        "user_action": "Usuario comparte ubicación",
+        "bot_response": "",
+        "validation_rule": "Validar geolocalización y asignar catálogo correspondiente.",
+        "required_data": "GPS / Ciudad / CP",
+        "next_step": "Mostrar menú principal",
+        "fallback": "Solicitar ciudad o Codigo Postal manualmente:\n⚠️ No pudimos identificar tu ubicación.\n\nPor favor:\n• escribe tu ciudad o código postal."
+    },
+    "3": {
+        "step_id": "3",
+        "objective": "Validar ubicación, confirmar sucursal y asignar catálogo correspondiente",
+        "user_action": "Usuario comparte ubicación, escribe ciudad/código postal o selecciona sucursal cercana",
+        "bot_response": "📍 Detectamos tu ubicación en:\nComalcalco, Tabasco.\n\nEstas son las sucursales más cercanas:\n\n1️⃣ Comalcalco Centro\n2️⃣ Tecolutilla\n3️⃣ Editar ubicación\n4️⃣ Hablar con un asesor\n\nSelecciona una opción.",
+        "validation_rule": "Validar geolocalización, sucursal seleccionada, catálogo disponible y cobertura de servicios por sucursal",
+        "required_data": "GPS / Ciudad / Código postal / Catálogo y cobertura de sucursales",
+        "next_step": "Asignar sucursal y mostrar menú principal",
+        "fallback": "⚠️ No pudimos identificar tu ubicación o sucursal más cercana.\n\n✏️ Puedes escribir nuevamente tu ciudad o código postal.\n\n👤 También podemos canalizarte con uno de nuestros asesores para ayudarte a encontrar la sucursal correcta."
+    },
+    "4": {
+        "step_id": "4",
+        "objective": "Mostrar menú principal según sucursal y servicios disponibles",
+        "user_action": "Usuario confirma ubicación",
+        "bot_response": "¿En qué podemos ayudarte hoy?\n1️⃣ Cotizar servicios\n2️⃣ Consultar resultados\n3️⃣ Dirección y horarios\n4️⃣ Hablar con un asesor",
+        "validation_rule": "Validar acceso a módulos, servicios activos y catálogo correspondiente por sucursal",
+        "required_data": "Ubicación validada, sucursal asignada y servicios disponibles",
+        "next_step": "Esperar selección",
+        "fallback": "Mostrar menú resumido o canalizar con asesor:  ¿En qué podemos ayudarte?\n\n1️⃣ Cotizar\n2️⃣ Ubicación\n3️⃣ Resultados\n4️⃣ Asesor"
+    },
+    "4.1": {
+        "step_id": "4.1",
+        "objective": "Seleccionar tipo de servicio a cotizar",
+        "user_action": "",
+        "bot_response": "",
+        "validation_rule": "Validar acceso a módulos, servicios activos y catálogo correspondiente por sucursal",
+        "required_data": "Ubicación validada, sucursal asignada y servicios disponibles",
+        "next_step": "Mostrar opciones de búsqueda según el tipo de servicio seleccionado",
+        "fallback": "Solicitar nuevamente una opción válida o canalizar con asesor"
+    },
+    "4.1.1": {
+        "step_id": "4.1.1",
+        "objective": "Definir forma de búsqueda del servicio o estudio seleccionado",
+        "user_action": "Usuario selecciona tipo de servicio (Laboratorio, USG o Rayos X)",
+        "bot_response": "🔎 Escribe el nombre del estudio que deseas cotizar:\n1️⃣ Buscar por nombre (\n2️⃣ Los más solicitados\n3️⃣ Hablar con un asesor\n\nSi elige USG\n1️⃣ Buscar por nombre\n2️⃣ Los más solicitados\n3️⃣ Hablar con un asesor\n\nSi elige Raxo X\n1️⃣ Buscar por nombre\n2️⃣ Los más solicitados\n3️⃣ Hablar con un asesor",
+        "validation_rule": "Validar menú, disponibilidad de opciones y catálogo correspondiente según el tipo de servicio y sucursal",
+        "required_data": "Tipo de servicio, sucursal asignada y catálogo disponible",
+        "next_step": "Esperar selección del usuario",
+        "fallback": "Solicitar nuevamente una opción válida o canalizar con asesor"
+    },
+    "4.1.1.1": {
+        "step_id": "4.1.1.1",
+        "objective": "Solicitar el nombre del estudio o servicio a cotizar",
+        "user_action": "Usuario selecciona “1️⃣ Buscar por nombre”",
+        "bot_response": "🔎 Escribe el nombre del estudio o servicio que deseas cotizar.\n\nEjemplos:\n• BH\n• Química sanguínea\n• Perfil tiroideo\n• Ultrasonido obstétrico\n• RX tórax\n• Hablar con un asesor.",
+        "validation_rule": "Buscar coincidencias y tolerancia a abreviaturas, nombres parciales, errores ortográficos y audio/transcripción",
+        "required_data": "Nombre, abreviatura o descripción parcial del estudio o servicio",
+        "next_step": "Buscar coincidencias y mostrar resultados",
+        "fallback": "⚠️ No pudimos identificar el estudio o servicio solicitado.\n👤 Te canalizaremos con uno de nuestros asesores para ayudarte a encontrar el servicio correcto."
+    },
+    "4.1.1.2": {
+        "step_id": "4.1.1.2",
+        "objective": "Confirmar estudios o servicios seleccionados antes de generar la cotización",
+        "user_action": "Usuario selecciona uno, varios estudios o la opción “Confirmar todos”",
+        "bot_response": "🔎 Encontramos estos estudios relacionados:\n\n1️⃣ Biometría Hemática (BH)\n2️⃣ Química Sanguínea de 6 elementos\n3️⃣ RX tórax\n\n4️⃣ Confirmar todos\n5️⃣ Ninguna de las anteriores\n6️⃣ Hablar con un asesor\n\nSelecciona una opción.",
+        "validation_rule": "Validar estudios seleccionados, disponibilidad, restricciones y compatibilidad con sucursal",
+        "required_data": "Estudios/servicios confirmados y sucursal asignada",
+        "next_step": "Si el usuario confirma uno o más estudios/servicios, mostrar cotización y preparación.\nSi selecciona “Ninguna de las anteriores” o “Hablar con un asesor”, escalar conversación con asesor.",
+        "fallback": "Ninguna de las anteriores o hablar con un asesor:\n👤 Te canalizaremos con uno de nuestros asesores para ayudarte a encontrar el estudio correcto."
+    },
+    "4.1.1.3": {
+        "step_id": "4.1.1.3",
+        "objective": "Mostrar cotización, tiempos e indicaciones relevantes de los estudios o servicios seleccionados",
+        "user_action": "Usuario confirma uno, varios estudios/servicios o selecciona “Confirmar todo",
+        "bot_response": "COTIZACIÓN: \n\n{{detalle}}{{avisoNoEncontrados}}\n\nINDICACIONES: \n{{indicaciones}}\n\n📍 Sucursal: {{sucursal}}\n\n🕒 Tiempo estimado de entrega: {{tiempoEntrega}}\n\n(Aplican restricciones según horario de toma de muestra y tipo de estudio.)\n\n⚡ Estudios urgentes pueden generar cargos adicionales.",
+        "validation_rule": "Validar catálogo, precios, tiempos de entrega, restricciones e indicaciones vigentes según el tipo de estudio/servicio y sucursal asignada",
+        "required_data": "Estudios/servicios confirmados, sucursal asignada, catálogo vigente, tiempos de entrega y preparación registrada en sistema",
+        "next_step": "Mostrar preparación detallada, agregar más estudios o escalar conversación con asesor",
+        "fallback": "⚠️ No pudimos obtener la cotización actualizada.\n👤 Te canalizaremos con uno de nuestros asesores para ayudarte."
+    },
+    "4.1.1.4": {
+        "step_id": "4.1.1.4",
+        "objective": "Mostrar preparación e indicaciones detalladas de los estudios o servicios cotizados",
+        "user_action": "Usuario selecciona la opción “1️⃣ Ver detalles de preparación”",
+        "bot_response": "📋 Detalles de preparación\n\n☑️ Perfil tiroideo\n• Ayuno de 8 a 12 horas.\n• Evitar medicamentos no indicados por su médico antes del estudio.\n\n☑️ Biometría Hemática\n• Ayuno recomendado de 8 horas.\n\n☑️ Química sanguínea\n• Ayuno obligatorio de 8 a 12 horas.\n• Evitar bebidas alcohólicas 24 horas antes.\n\n📌 Indicaciones generales:\n• Presentar orden médica si cuenta con ella.\n• Acudir con identificación oficial.\n• Las indicaciones pueden variar según el tipo de estudio y valoración médica.\n\n¿Cómo deseas continuar?\n1️⃣ Hablar con un asesor\n2️⃣  Finalizar consulta",
+        "validation_rule": "Validar preparación, restricciones, recomendaciones e indicaciones vigentes según el estudio/servicio y sucursal asignada",
+        "required_data": "Estudios/servicios confirmados, preparación registrada en catálogo y sucursal asignada",
+        "next_step": "Finalizar conversación o escalar con asesor",
+        "fallback": "⚠️ No pudimos obtener las indicaciones completas del estudio o servicio solicitado. \n\n👤 Te canalizaremos con uno de nuestros asesores para ayudarte con la preparación correcta."
+    },
+    "4.1.1.5": {
+        "step_id": "4.1.1.5",
+        "objective": "Finalizar la consulta de forma clara, cordial y dejando abierta la posibilidad de continuar atención posteriormente",
+        "user_action": "Usuario selecciona “3️⃣ Finalizar consulta”",
+        "bot_response": "✅ Hemos finalizado tu consulta.\n\n💙 Gracias por comunicarte con Laboratorios Nápoles. Será un gusto atenderte en cualquiera de nuestras sucursales.\n\n📍 Recuerda presentar tu orden médica si cuentas con ella.\n\n📌 Las indicaciones, horarios y tiempos de entrega pueden variar según el estudio o servicio solicitado.\n\n🔒 Consulta nuestro Aviso de Privacidad:\nhttps://labnapoles.mx/aviso-de-privacidad\n\n¡Gracias por tu confianza! 😊",
+        "validation_rule": "Registrar cierre de conversación y guardar historial de interacción",
+        "required_data": "Conversación activa, sucursal asignada y estudios/servicios consultados",
+        "next_step": "Finalizar conversación o reiniciar flujo si el usuario vuelve a escribir",
+        "fallback": "Mostrar mensaje alternativo de cierre o canalizar con asesor si existe interacción pendiente"
+    },
+    "4.1.2": {
+        "step_id": "4.1.2",
+        "objective": "Mostrar estudios o servicios más solicitados según el tipo de servicio seleccionado",
+        "user_action": "Usuario selecciona “2️⃣ Los más solicitados”",
+        "bot_response": "🔎 Estos son algunos de nuestros servicios más solicitados:\n\n🧪 Laboratorio Clínico \n1️⃣ Biometría Hemática (BH)\n2️⃣ Química Sanguínea (6 elementos)\n3️⃣ Examen General de Orina (EGO)\n4️⃣ Perfil tiroideo\n5️⃣ Prueba de embarazo\n6️⃣ Perfil de lípidos\n7️⃣ Ver más estudios\n\n\n🩻 Ultrasonidos (USG)\n1️⃣ USG Obstétrico\n2️⃣ USG Pélvico\n3️⃣ USG Abdomen Superior\n4️⃣ USG Renal\n5️⃣ USG Mamario\n\n\n📸 Rayos X\n1️⃣ RX Tórax\n2️⃣ RX Columna Lumbar\n3️⃣ RX Rodilla\n4️⃣ RX Mano",
+        "validation_rule": "Validar catálogo activo, disponibilidad por sucursal y servicios habilitados según el tipo de servicio",
+        "required_data": "Tipo de servicio seleccionado, sucursal asignada y catálogo vigente",
+        "next_step": "Si el usuario selecciona uno o más estudios/servicios,\nmostrar cotización y preparación (4.1.1.3).\n\nSi selecciona “Hablar con un asesor”, escalar conversación con asesor.",
+        "fallback": "👤 Te canalizaremos con uno de nuestros asesores para ayudarte a encontrar el estudio o servicio correcto."
+    },
+    "4.2": {
+        "step_id": "4.2",
+        "objective": "Identificar al paciente y localizar resultados mediante foto de recibo o número de folio",
+        "user_action": "Usuario selecciona 2️⃣ Consultar resultados",
+        "bot_response": "Con gusto te ayudamos a consultar tus resultados.\n\nPor favor comparte foto de tu recibo o número de folio\n\n1️⃣ Hablar con un asesor",
+        "validation_rule": "Validar folio proporcionado o extraer folio mediante OCR de la foto del recibo",
+        "required_data": "Foto de recibo o número de folio",
+        "next_step": "Buscar resultados por folio o canalizar con asesor",
+        "fallback": "No pudimos detectar un número de folio. Por favor ingresa solo los números de tu folio o envía una foto más clara de tu recibo.\n\n1️⃣ Hablar con un asesor"
+    },
+    "4.2.1 A": {
+        "step_id": "4.2.1 A",
+        "objective": "Confirmar coincidencia de información encontrada cuando los resultados aún no están liberados",
+        "user_action": "Usuario proporciona folio, expediente o teléfono registrado y los estudios aún están en proceso",
+        "bot_response": "🧪 Encontramos información relacionada con tu solicitud:\n\n👤 Paciente: Adrián Arturo G.\n📍 Sucursal: Napoles Matriz\n📅 Fecha de recepción: 29/10/2025\n🧾 Folio: 0163538\n\n⏳ Tus resultados aún se encuentran en proceso de validación.\n\nEl tiempo de entrega puede variar según el tipo de estudio solicitado.\n\n¿Cómo deseas continuar?\n\n1️⃣ Hablar con un asesor\n2️⃣ Consultar otro folio\n3️⃣ Finalizar consulta",
+        "validation_rule": "Validar coincidencia de información y permisos de acceso a resultados",
+        "required_data": "Folio, expediente o teléfono validado",
+        "next_step": "Mostrar resultados, generar descarga o reiniciar búsqueda",
+        "fallback": "⚠️ No pudimos confirmar completamente la información.\n\n👤 Un asesor puede ayudarte a localizar tus resultados correctamente."
+    },
+    "4.2.1 A.1 y 4.2.1.B.1.1": {
+        "step_id": "4.2.1 A.1 y 4.2.1.B.1.1",
+        "objective": "Finalizar la consulta de resultados de forma clara, segura y cordial, dejando abierta la posibilidad de futuras consultas o seguimiento",
+        "user_action": "Usuario selecciona “3️⃣ Finalizar consulta”",
+        "bot_response": "✅ Hemos finalizado tu consulta de resultados.\n\n💙 Gracias por comunicarte con Laboratorios Napoles.\n\n📌 Si tus estudios aún se encuentran en proceso, recuerda que los tiempos de liberación pueden variar según el tipo de estudio y el proceso de validación médica.\n\n🔒 Por seguridad y confidencialidad, tus resultados únicamente pueden consultarse mediante los medios autorizados.\n\n🌐 Consulta nuestro Aviso de Privacidad:\nhttps://labnapoles.mx/aviso-de-privacidad",
+        "validation_rule": "Registrar cierre de conversación y guardar historial de interacción",
+        "required_data": "Conversación activa, folio/expediente consultado y estado de resultados",
+        "next_step": "Finalizar conversación o reiniciar flujo si el usuario vuelve a escribir",
+        "fallback": "📌 Puedes volver a consultar tus resultados en cualquier momento utilizando tu folio, expediente o número registrado.\n👤 Si necesitas ayuda adicional, uno de nuestros asesores podrá apoyarte."
+    },
+    "4.2.1 B": {
+        "step_id": "4.2.1 B",
+        "objective": "Confirmar coincidencia de información encontrada y permitir acceso a resultados liberados",
+        "user_action": "Usuario proporciona folio, expediente o teléfono registrado y los resultados ya están disponibles",
+        "bot_response": "🧪 Tus resultados ya están disponibles.\n\n👤 Paciente: Adrián Arturo G.\n📍 Sucursal: Napoles Matriz\n📅 Fecha de recepción: 29/10/2025\n🧾 Folio: 0163538\n\n¿Cómo deseas consultarlos?\n\n1️⃣ Descargar PDF\n2️⃣ Acceder al Portal Salud\n3️⃣ Hablar con un asesor",
+        "validation_rule": "Validar coincidencia de información, resultados liberados y permisos de acceso",
+        "required_data": "Folio, expediente o teléfono validado",
+        "next_step": "Generar descarga, enviar enlace o acceder al portal",
+        "fallback": "⚠️ No pudimos confirmar completamente la información.\n\n👤 Un asesor puede ayudarte a localizar tus resultados correctamente."
+    },
+    "4.2.1.B.1": {
+        "step_id": "4.2.1.B.1",
+        "objective": "Permitir descarga segura de resultados en PDF",
+        "user_action": "Usuario selecciona “1️⃣ Descargar PDF”",
+        "bot_response": "📄 Tus resultados están listos para descarga.\n\n🔗 Descargar resultados:\n⚠️ Por seguridad, este enlace puede expirar después de un tiempo determinado.\n\n¿Necesitas algo más?\n1️⃣ Consultar otro resultado\n2️⃣ Hablar con un asesor\n3️⃣ Finalizar consulta",
+        "validation_rule": "Validar existencia del PDF y permisos de descarga",
+        "required_data": "PDF generado y token de acceso",
+        "next_step": "Esperar selección del usuario",
+        "fallback": "⚠️ No pudimos general la descarga automatica. \n\n👤 Un asesor puede ayudarte a descargar tus resultados correctamente."
+    },
+    "4.2.1.B.2": {
+        "step_id": "4.2.1.B.2",
+        "objective": "Permitir acceso del paciente al Portal Salud",
+        "user_action": "Usuario selecciona “2️⃣ Acceder desde Portal Salud”",
+        "bot_response": "🌐 Puedes consultar y descargar tus resultados desde Portal Salud.\n\n🔐 Si aún no tienes cuenta, será necesario registrarte con tu información personal.\n\n🔗 Acceso al portal:\nhttps://portal.labnapoles.mx",
+        "validation_rule": "Validar disponibilidad del portal y acceso del paciente",
+        "required_data": "URL portal y datos de autenticación",
+        "next_step": "Redirigir al portal o explicar registro",
+        "fallback": "⚠️ Si tienes problemas para ingresar al portal, un asesor puede ayudarte."
+    },
+    "5 o 4.2.C": {
+        "step_id": "5 o 4.2.C",
+        "objective": "Validar disponibilidad de asesores y horario de atención antes de escalar la conversación",
+        "user_action": "Usuario selecciona “👤 Hablar con un asesor” desde cualquier etapa",
+        "bot_response": "⏳ Permítenos unos momentos mientras validamos la disponibilidad de nuestros asesores.",
+        "validation_rule": "Validar horario de atención, disponibilidad de asesores y saturación de conversaciones",
+        "required_data": "Horario laboral, estatus de asesores y canal de atención",
+        "next_step": "Redirigir a 5.1.ó 5.2",
+        "fallback": "Informar alternativa de contacto o registrar solicitud"
+    },
+    "5.1": {
+        "step_id": "5.1",
+        "objective": "Transferir la conversación a un asesor disponible",
+        "user_action": "Usuario solicita apoyo humano",
+        "bot_response": "⏳ Permítenos unos momentos mientras validamos la disponibilidad de nuestros asesores. ⏳ Seguimos atendiendo tu solicitud, por favor no te desconectes.",
+        "validation_rule": "Confirmar asignación de asesor",
+        "required_data": "Cola de atención activa",
+        "next_step": "Transferir conversación",
+        "fallback": "⚠️ Nuestros asesores se encuentran atendiendo otras solicitudes.\n\nTu mensaje ha sido registrado y será atendido a la brevedad posible."
+    },
+    "5.2": {
+        "step_id": "5.2",
+        "objective": "Informar que no hay asesores disponibles fuera del horario de atención",
+        "user_action": "Usuario solicita asesor fuera de horario",
+        "bot_response": "⚠️ Por el momento no hay asesores disponibles.\n\n🕒 Horario de atención:\nLunes a viernes: 7:00 am a 7:30 pm\nSábados: 7:00 am a 4:30 pm\nDomingos: 7:00 am a 2:00 pm\n\n📌 Puedes continuar utilizando nuestros servicios automáticos o volver a comunicarte dentro del horario de atención.",
+        "validation_rule": "Validar horario actual",
+        "required_data": "Horarios oficiales",
+        "next_step": "Mostrar menú principal o finalizar conversación",
+        "fallback": "Registrar solicitud para seguimiento posterior o permitir dejar mensaje"
+    }
+}

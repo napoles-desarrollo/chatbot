@@ -1,0 +1,892 @@
+{
+  "version": 1,
+  "fuente": "RESULTDOS.csv",
+  "aliases": [
+    {
+      "terminos": [
+        "azucar",
+        "azucar en sangre",
+        "glucemia",
+        "glucosa en sangre"
+      ],
+      "requiere_confirmacion": false,
+      "candidatos": [
+        {
+          "id_estudio": 1,
+          "nombre": "GLUCOSA",
+          "prioridad": 100
+        }
+      ]
+    },
+    {
+      "terminos": [
+        "hba1c",
+        "hemoglobina glicosilada",
+        "hemoglobina glucosilada",
+        "azucar de 3 meses",
+        "azucar de tres meses",
+        "promedio de azucar"
+      ],
+      "requiere_confirmacion": false,
+      "candidatos": [
+        {
+          "id_estudio": 71,
+          "nombre": "HEMOGLOBINA GLICOSILADA",
+          "prioridad": 100
+        }
+      ]
+    },
+    {
+      "terminos": [
+        "bh",
+        "b h",
+        "biometria",
+        "biometria hematica",
+        "biometria completa"
+      ],
+      "requiere_confirmacion": false,
+      "candidatos": [
+        {
+          "id_estudio": 230,
+          "nombre": "BIOMETRIA HEMATICA COMPLETA",
+          "prioridad": 100
+        }
+      ]
+    },
+    {
+      "terminos": [
+        "ego",
+        "e g o",
+        "examen de orina",
+        "examen general de orina"
+      ],
+      "requiere_confirmacion": false,
+      "candidatos": [
+        {
+          "id_estudio": 8,
+          "nombre": "EXAMEN GENERAL DE ORINA",
+          "prioridad": 100
+        }
+      ]
+    },
+    {
+      "terminos": [
+        "colesterol",
+        "colesterol total"
+      ],
+      "requiere_confirmacion": false,
+      "candidatos": [
+        {
+          "id_estudio": 2,
+          "nombre": "COLESTEROL TOTAL",
+          "prioridad": 100
+        }
+      ]
+    },
+    {
+      "terminos": [
+        "trigliceridos"
+      ],
+      "requiere_confirmacion": false,
+      "candidatos": [
+        {
+          "id_estudio": 3,
+          "nombre": "TRIGLICERIDOS",
+          "prioridad": 100
+        }
+      ]
+    },
+    {
+      "terminos": [
+        "prueba de embarazo",
+        "test de embarazo",
+        "embarazo en sangre"
+      ],
+      "requiere_confirmacion": false,
+      "candidatos": [
+        {
+          "id_estudio": 5580,
+          "nombre": "PRUEBA INMUNOLOGICA DE EMBARAZO",
+          "prioridad": 100
+        }
+      ]
+    },
+    {
+      "terminos": [
+        "urocultivo",
+        "cultivo de orina"
+      ],
+      "requiere_confirmacion": false,
+      "candidatos": [
+        {
+          "id_estudio": 266,
+          "nombre": "UROCULTIVO",
+          "prioridad": 100
+        }
+      ]
+    },
+    {
+      "terminos": [
+        "sangre oculta",
+        "sangre oculta en heces"
+      ],
+      "requiere_confirmacion": false,
+      "candidatos": [
+        {
+          "id_estudio": 510,
+          "nombre": "SANGRE OCULTA EN HECES",
+          "prioridad": 100
+        }
+      ]
+    },
+    {
+      "terminos": [
+        "papanicolau",
+        "papanicolaou",
+        "pap",
+        "papanicolado"
+      ],
+      "requiere_confirmacion": false,
+      "candidatos": [
+        {
+          "id_estudio": 222,
+          "nombre": "PAPANICOLAOU",
+          "prioridad": 100
+        }
+      ]
+    },
+    {
+      "terminos": [
+        "quimica sanguinea",
+        "qs",
+        "q s"
+      ],
+      "requiere_confirmacion": true,
+      "pregunta": "¿De cuántos elementos necesitas la química sanguínea?",
+      "candidatos": [
+        {
+          "id_estudio": 139,
+          "nombre": "QUIMICA SANGUINEA (3 ELEMENTOS)",
+          "prioridad": 100
+        },
+        {
+          "id_estudio": 140,
+          "nombre": "QUIMICA SANGUINEA (4 ELEMENTOS)",
+          "prioridad": 95
+        },
+        {
+          "id_estudio": 141,
+          "nombre": "QUIMICA SANGUINEA (6 ELEMENTOS)",
+          "prioridad": 90
+        },
+        {
+          "id_estudio": 704,
+          "nombre": "QUIMICA SANGUINEA (7 ELEMENTOS)",
+          "prioridad": 85
+        },
+        {
+          "id_estudio": 142,
+          "nombre": "QUIMICA SANGUINEA (12 ELEMENTOS)",
+          "prioridad": 80
+        },
+        {
+          "id_estudio": 533,
+          "nombre": "QUIMICA SANGUINEA (27 ELEMENTOS)",
+          "prioridad": 75
+        },
+        {
+          "id_estudio": 534,
+          "nombre": "QUIMICA SANGUINEA (30 ELEMENTOS)",
+          "prioridad": 70
+        },
+        {
+          "id_estudio": 535,
+          "nombre": "QUIMICA SANGUINEA (32 ELEMENTOS)",
+          "prioridad": 65
+        },
+        {
+          "id_estudio": 538,
+          "nombre": "QUIMICA SANGUINEA (35 ELEMENTOS)",
+          "prioridad": 60
+        },
+        {
+          "id_estudio": 5160,
+          "nombre": "QUIMICA SANGUINEA (45 ELEMENTOS)",
+          "prioridad": 55
+        }
+      ]
+    },
+    {
+      "terminos": [
+        "tiroides",
+        "perfil tiroideo"
+      ],
+      "requiere_confirmacion": true,
+      "pregunta": "¿Qué perfil tiroideo necesitas?",
+      "candidatos": [
+        {
+          "id_estudio": 145,
+          "nombre": "PERFIL TIROIDEO",
+          "prioridad": 100
+        },
+        {
+          "id_estudio": 146,
+          "nombre": "PERFIL TIROIDEO 2",
+          "prioridad": 90
+        },
+        {
+          "id_estudio": 681,
+          "nombre": "PERFIL TIROIDEO COMPLETO",
+          "prioridad": 80
+        }
+      ]
+    },
+    {
+      "terminos": [
+        "copro",
+        "coproparasitoscopico",
+        "parasitos en heces"
+      ],
+      "requiere_confirmacion": true,
+      "pregunta": "¿El coproparasitoscópico es de una, dos o tres muestras?",
+      "candidatos": [
+        {
+          "id_estudio": 180,
+          "nombre": "COPROPARASITOSCOPICO (1 MUESTRA)",
+          "prioridad": 100
+        },
+        {
+          "id_estudio": 181,
+          "nombre": "COPROPARASITOSCOPICO (2 MUESTRAS)",
+          "prioridad": 90
+        },
+        {
+          "id_estudio": 182,
+          "nombre": "COPROPARASITOSCOPICO (3 MUESTRAS)",
+          "prioridad": 80
+        }
+      ]
+    },
+    {
+      "terminos": [
+        "psa",
+        "antigeno prostatico"
+      ],
+      "requiere_confirmacion": true,
+      "pregunta": "¿Necesitas antígeno prostático total o libre?",
+      "candidatos": [
+        {
+          "id_estudio": 101,
+          "nombre": "ANTIGENO PROSTATICO ESPECIFICO TOTAL",
+          "prioridad": 100
+        },
+        {
+          "id_estudio": 100,
+          "nombre": "ANTIGENO PROSTATICO ESPECIFICO LIBRE",
+          "prioridad": 90
+        }
+      ]
+    },
+    {
+      "terminos": [
+        "vitamina d"
+      ],
+      "requiere_confirmacion": true,
+      "pregunta": "¿Necesitas vitamina D 25-OH, calcitriol o vitamina D3?",
+      "candidatos": [
+        {
+          "id_estudio": 522,
+          "nombre": "VITAMINA D (25-HIDROXI-COLECALCIFEROL)",
+          "prioridad": 100
+        },
+        {
+          "id_estudio": 5193,
+          "nombre": "VITAMINA D1, 25-OH (CALCITRIOL)",
+          "prioridad": 80
+        },
+        {
+          "id_estudio": 4880,
+          "nombre": "VITAMINA D3",
+          "prioridad": 70
+        }
+      ]
+    },
+    {
+      "terminos": [
+        "covid",
+        "prueba covid",
+        "prueba de covid"
+      ],
+      "requiere_confirmacion": true,
+      "pregunta": "¿Necesitas antígeno, PCR o anticuerpos de COVID-19?",
+      "candidatos": [
+        {
+          "id_estudio": 682,
+          "nombre": "ANTIGENO PARA COVID-19",
+          "prioridad": 100
+        },
+        {
+          "id_estudio": 235,
+          "nombre": "PCR PARA SARS-CoV-2 (COVID-19)",
+          "prioridad": 90
+        },
+        {
+          "id_estudio": 233,
+          "nombre": "AC. ANTI COVID-19 IGG, IGM",
+          "prioridad": 80
+        }
+      ]
+    },
+    {
+      "terminos": [
+        "influenza",
+        "prueba influenza"
+      ],
+      "requiere_confirmacion": true,
+      "pregunta": "¿Necesitas prueba rápida o antígeno de influenza?",
+      "candidatos": [
+        {
+          "id_estudio": 446,
+          "nombre": "INFLUENZA TIPO \"A\" Y \"B\" (PRUEBA RAPIDA)",
+          "prioridad": 100
+        },
+        {
+          "id_estudio": 5636,
+          "nombre": "INFLUENZA AG A/B (H1N1)",
+          "prioridad": 90
+        }
+      ]
+    },
+    {
+      "terminos": [
+        "helicobacter",
+        "helicobacter pylori",
+        "bacteria del estomago"
+      ],
+      "requiere_confirmacion": true,
+      "pregunta": "¿Necesitas Helicobacter pylori en heces o anticuerpos?",
+      "candidatos": [
+        {
+          "id_estudio": 486,
+          "nombre": "HELICOBACTER PYLORI EN HECES FECALES",
+          "prioridad": 100
+        },
+        {
+          "id_estudio": 102,
+          "nombre": "AC. ANTI HELICOBACTER PYLORI IgA",
+          "prioridad": 80
+        },
+        {
+          "id_estudio": 103,
+          "nombre": "AC. ANTI HELICOBACTER PYLORI IgG",
+          "prioridad": 75
+        },
+        {
+          "id_estudio": 104,
+          "nombre": "AC. ANTI HELICOBACTER PYLORI IgM",
+          "prioridad": 70
+        }
+      ]
+    },
+    {
+      "terminos": [
+        "orina"
+      ],
+      "requiere_confirmacion": true,
+      "pregunta": "¿Buscas un examen general de orina o un urocultivo?",
+      "candidatos": [
+        {
+          "id_estudio": 8,
+          "nombre": "EXAMEN GENERAL DE ORINA",
+          "prioridad": 100
+        },
+        {
+          "id_estudio": 266,
+          "nombre": "UROCULTIVO",
+          "prioridad": 90
+        }
+      ]
+    },
+    {
+      "terminos": [
+        "vih",
+        "v i h",
+        "hiv",
+        "h i v",
+        "sida",
+        "prueba de vih",
+        "prueba vih",
+        "elisa vih",
+        "vih elisa"
+      ],
+      "requiere_confirmacion": false,
+      "candidatos": [
+        {
+          "id_estudio": 9,
+          "nombre": "AC. ANTI HIV 1 Y 2 (PRESUNTIVA)",
+          "prioridad": 100
+        },
+        {
+          "id_estudio": 4886,
+          "nombre": "HIV ELISA",
+          "prioridad": 95
+        },
+        {
+          "id_estudio": 610,
+          "nombre": "CARGA VIRAL DE HIV",
+          "prioridad": 90
+        },
+        {
+          "id_estudio": 530,
+          "nombre": "WESTERN BLOT HIV-1",
+          "prioridad": 85
+        }
+      ]
+    },
+    {
+      "terminos": [
+        "ultrasonido de embarazo",
+        "eco de embarazo",
+        "ultrasonido obstetrico",
+        "eco obstetrico",
+        "eco obstetrica",
+        "ultrasonido obstetrica"
+      ],
+      "requiere_confirmacion": false,
+      "candidatos": [
+        {
+          "id_estudio": 5163,
+          "nombre": "USG OBSTETRICO",
+          "prioridad": 100
+        }
+      ]
+    },
+    {
+      "terminos": [
+        "rx de torax",
+        "radiografia de torax",
+        "placa de torax",
+        "tele de torax",
+        "rx torax"
+      ],
+      "requiere_confirmacion": true,
+      "candidatos": [
+        {
+          "id_estudio": 362,
+          "nombre": "RX. TELE DE TORAX",
+          "prioridad": 100
+        },
+        {
+          "id_estudio": 365,
+          "nombre": "RX. TORAX AP",
+          "prioridad": 90
+        },
+        {
+          "id_estudio": 366,
+          "nombre": "RX. TORAX LATERAL DERECHA",
+          "prioridad": 80
+        }
+      ],
+      "pregunta": "Tenemos varias radiografías de tórax. ¿Cuál necesitas?"
+    },
+    {
+      "terminos": [
+        "ets",
+        "its",
+        "ets its",
+        "enfermedades de transmision sexual",
+        "infecciones de transmision sexual",
+        "perfil de its",
+        "perfil de ets",
+        "perfil its",
+        "perfil ets",
+        "panel de its",
+        "panel de ets",
+        "panel de transmision sexual",
+        "panel de salud sexual",
+        "salud sexual",
+        "chequeo de salud sexual",
+        "prueba de its",
+        "prueba de ets",
+        "pruebas de transmision sexual"
+      ],
+      "requiere_confirmacion": true,
+      "pregunta": "Tenemos varios paneles de transmisión sexual. ¿Cuál te interesa?",
+      "candidatos": [
+        {
+          "id_estudio": 4900,
+          "nombre": "PANEL DE PCR INFECCIOSO DE TRANSMISION SEXUAL BASICO",
+          "prioridad": 100
+        },
+        {
+          "id_estudio": 5408,
+          "nombre": "PANEL DE PCR INFECCIOSO DE TRANSMISION SEXUAL COMPLETO",
+          "prioridad": 90
+        },
+        {
+          "id_estudio": 5409,
+          "nombre": "PANEL DE PCR INFECCIOSO DE TRANSMISION SEXUAL 2",
+          "prioridad": 80
+        }
+      ]
+    },
+    {
+      "terminos": [
+        "anemia",
+        "tengo anemia",
+        "prueba de anemia",
+        "estoy anemico",
+        "estoy anemica",
+        "soy anemico",
+        "hemoglobina baja",
+        "si tengo anemia",
+        "estudio de anemia"
+      ],
+      "requiere_confirmacion": true,
+      "pregunta": "Para revisar anemia solemos pedir estos estudios. ¿Cuál necesitas?",
+      "candidatos": [
+        {
+          "id_estudio": 230,
+          "nombre": "BIOMETRIA HEMATICA COMPLETA",
+          "prioridad": 100
+        },
+        {
+          "id_estudio": 160,
+          "nombre": "HIERRO SERICO",
+          "prioridad": 90
+        },
+        {
+          "id_estudio": 161,
+          "nombre": "FERRITINA",
+          "prioridad": 80
+        }
+      ]
+    },
+    {
+      "terminos": [
+        "hierro",
+        "hierro en sangre",
+        "hierro serico",
+        "ferritina",
+        "cinetica de hierro",
+        "nivel de hierro",
+        "niveles de hierro"
+      ],
+      "requiere_confirmacion": true,
+      "candidatos": [
+        {
+          "id_estudio": 160,
+          "nombre": "HIERRO SERICO",
+          "prioridad": 100
+        },
+        {
+          "id_estudio": 161,
+          "nombre": "FERRITINA",
+          "prioridad": 90
+        },
+        {
+          "id_estudio": 165,
+          "nombre": "CINETICA DE HIERRO",
+          "prioridad": 80
+        }
+      ]
+    },
+    {
+      "terminos": [
+        "grasa en la sangre",
+        "grasa en sangre",
+        "grasas en la sangre",
+        "perfil de lipidos",
+        "perfil lipidico",
+        "perfil de lipidos completo",
+        "lipidos",
+        "colesterol y trigliceridos",
+        "colesterol y grasas"
+      ],
+      "requiere_confirmacion": true,
+      "candidatos": [
+        {
+          "id_estudio": 135,
+          "nombre": "PERFIL DE LIPIDOS",
+          "prioridad": 100
+        },
+        {
+          "id_estudio": 136,
+          "nombre": "PERFIL DE LIPIDOS 2",
+          "prioridad": 90
+        }
+      ]
+    },
+    {
+      "terminos": [
+        "diabetes",
+        "prueba de diabetes",
+        "soy diabetico",
+        "soy diabetica",
+        "diabetico",
+        "diabetica",
+        "azucar alta",
+        "si tengo diabetes",
+        "control de diabetes",
+        "curva de tolerancia"
+      ],
+      "requiere_confirmacion": true,
+      "pregunta": "Para diabetes tenemos estas opciones. ¿Cuál te indicaron?",
+      "candidatos": [
+        {
+          "id_estudio": 1,
+          "nombre": "GLUCOSA",
+          "prioridad": 100
+        },
+        {
+          "id_estudio": 71,
+          "nombre": "HEMOGLOBINA GLICOSILADA",
+          "prioridad": 90
+        },
+        {
+          "id_estudio": 192,
+          "nombre": "CURVA DE TOLERANCIA A LA GLUCOSA (2 HRS/3 TOMAS)",
+          "prioridad": 80
+        }
+      ]
+    },
+    {
+      "terminos": [
+        "higado",
+        "perfil hepatico",
+        "perfil de higado",
+        "pruebas de higado",
+        "funcionamiento del higado",
+        "enzimas del higado",
+        "transaminasas",
+        "como esta mi higado"
+      ],
+      "requiere_confirmacion": true,
+      "candidatos": [
+        {
+          "id_estudio": 152,
+          "nombre": "PERFIL HEPATICO",
+          "prioridad": 100
+        },
+        {
+          "id_estudio": 153,
+          "nombre": "PERFIL HEPATICO 2",
+          "prioridad": 90
+        }
+      ]
+    },
+    {
+      "terminos": [
+        "funcion renal",
+        "funcionamiento del rinon",
+        "perfil renal",
+        "rinones",
+        "rinon",
+        "prueba de rinon",
+        "como estan mis rinones"
+      ],
+      "requiere_confirmacion": false,
+      "candidatos": [
+        {
+          "id_estudio": 577,
+          "nombre": "PERFIL RENAL",
+          "prioridad": 100
+        }
+      ]
+    },
+    {
+      "terminos": [
+        "examen de heces",
+        "analisis de heces",
+        "prueba de heces",
+        "examen de excremento",
+        "coprologico",
+        "coprocultivo",
+        "estudio de popo"
+      ],
+      "requiere_confirmacion": true,
+      "pregunta": "Tenemos varios estudios de heces. ¿Cuál te indicaron?",
+      "candidatos": [
+        {
+          "id_estudio": 180,
+          "nombre": "COPROPARASITOSCOPICO (1 MUESTRA)",
+          "prioridad": 100
+        },
+        {
+          "id_estudio": 179,
+          "nombre": "COPROLOGICO",
+          "prioridad": 90
+        },
+        {
+          "id_estudio": 264,
+          "nombre": "COPROCULTIVO",
+          "prioridad": 80
+        }
+      ]
+    },
+    {
+      "terminos": [
+        "hepatitis",
+        "prueba de hepatitis",
+        "panel de hepatitis",
+        "hepatitis abc",
+        "perfil de hepatitis"
+      ],
+      "requiere_confirmacion": true,
+      "candidatos": [
+        {
+          "id_estudio": 699,
+          "nombre": "PANEL DE HEPATITIS A, B, C",
+          "prioridad": 100
+        },
+        {
+          "id_estudio": 4841,
+          "nombre": "PANEL DE HEPATITIS B",
+          "prioridad": 90
+        }
+      ]
+    },
+    {
+      "terminos": [
+        "gota",
+        "tengo gota",
+        "prueba de gota",
+        "acido urico alto",
+        "estudio de gota"
+      ],
+      "requiere_confirmacion": false,
+      "candidatos": [
+        {
+          "id_estudio": 4,
+          "nombre": "ACIDO URICO",
+          "prioridad": 100
+        }
+      ]
+    },
+    {
+      "terminos": [
+        "fertilidad",
+        "prueba de fertilidad",
+        "estudio de fertilidad",
+        "conteo de espermas",
+        "espermatobioscopia",
+        "si soy fertil",
+        "prueba de esterilidad",
+        "conteo espermatico"
+      ],
+      "requiere_confirmacion": true,
+      "candidatos": [
+        {
+          "id_estudio": 195,
+          "nombre": "ESPERMATOBIOSCOPIA DIRECTA",
+          "prioridad": 100
+        },
+        {
+          "id_estudio": 150,
+          "nombre": "PERFIL HORMONAL",
+          "prioridad": 90
+        }
+      ]
+    },
+    {
+      "terminos": [
+        "marcadores tumorales",
+        "marcador tumoral",
+        "prueba de cancer",
+        "deteccion de cancer",
+        "antigenos tumorales",
+        "estudio de cancer"
+      ],
+      "requiere_confirmacion": true,
+      "pregunta": "Tenemos varios marcadores tumorales. ¿Cuál te indicaron?",
+      "candidatos": [
+        {
+          "id_estudio": 120,
+          "nombre": "ANTIGENO CARCINOEMBRIONARIO",
+          "prioridad": 100
+        },
+        {
+          "id_estudio": 117,
+          "nombre": "ANTIGENO CA-125 (OVARIOS)",
+          "prioridad": 90
+        },
+        {
+          "id_estudio": 115,
+          "nombre": "ANTIGENO CA-15.3 (MAMA)",
+          "prioridad": 80
+        }
+      ]
+    },
+    {
+      "terminos": [
+        "chequeo general",
+        "examen de sangre general",
+        "check up",
+        "checkup",
+        "chequeo completo",
+        "estudios generales",
+        "examenes generales",
+        "perfil general",
+        "chequeo de rutina",
+        "estudios de rutina"
+      ],
+      "requiere_confirmacion": true,
+      "pregunta": "Tenemos varios paquetes de chequeo. ¿Cuál prefieres?",
+      "candidatos": [
+        {
+          "id_estudio": 544,
+          "nombre": "CHECK UP BASICO",
+          "prioridad": 100
+        },
+        {
+          "id_estudio": 546,
+          "nombre": "CHECK UP FEMENINO",
+          "prioridad": 90
+        },
+        {
+          "id_estudio": 547,
+          "nombre": "CHECK UP MASCULINO",
+          "prioridad": 80
+        }
+      ]
+    },
+    {
+      "terminos": [
+        "prostata",
+        "revision de prostata",
+        "estudio de la prostata",
+        "prueba de la prostata",
+        "como esta mi prostata"
+      ],
+      "requiere_confirmacion": true,
+      "candidatos": [
+        {
+          "id_estudio": 101,
+          "nombre": "ANTIGENO PROSTATICO ESPECIFICO TOTAL",
+          "prioridad": 100
+        },
+        {
+          "id_estudio": 100,
+          "nombre": "ANTIGENO PROSTATICO ESPECIFICO LIBRE",
+          "prioridad": 90
+        }
+      ]
+    },
+    {
+      "terminos": [
+        "examen de la vista",
+        "agudeza visual",
+        "prueba de la vista",
+        "revision de la vista"
+      ],
+      "requiere_confirmacion": false,
+      "candidatos": [
+        {
+          "id_estudio": 4749,
+          "nombre": "AGUDEZA VISUAL",
+          "prioridad": 100
+        }
+      ]
+    }
+  ]
+}

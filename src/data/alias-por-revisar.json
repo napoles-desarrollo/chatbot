@@ -1,0 +1,1310 @@
+{
+  "version": 2,
+  "aliases": [
+    {
+      "terminos": [
+        "cestosteroides"
+      ],
+      "requiere_confirmacion": false,
+      "candidatos": [
+        {
+          "id_estudio": 650,
+          "nombre": "17-CETOSTEROIDES EN ORINA",
+          "prioridad": 100
+        }
+      ]
+    },
+    {
+      "terminos": [
+        "miositis"
+      ],
+      "requiere_confirmacion": false,
+      "candidatos": [
+        {
+          "id_estudio": 678,
+          "nombre": "AC. ANTI MIELINA",
+          "prioridad": 100
+        }
+      ]
+    },
+    {
+      "terminos": [
+        "anticuepos de giardia"
+      ],
+      "requiere_confirmacion": false,
+      "candidatos": [
+        {
+          "id_estudio": 746,
+          "nombre": "AC. ANTI GLIADINAS IgA, IgG",
+          "prioridad": 100
+        }
+      ]
+    },
+    {
+      "terminos": [
+        "microsomales",
+        "anti peroxidasa"
+      ],
+      "requiere_confirmacion": false,
+      "candidatos": [
+        {
+          "id_estudio": 4817,
+          "nombre": "AC. ANTI MI-2",
+          "prioridad": 100
+        }
+      ]
+    },
+    {
+      "terminos": [
+        "mielina"
+      ],
+      "requiere_confirmacion": false,
+      "candidatos": [
+        {
+          "id_estudio": 105,
+          "nombre": "AC. ANTI MICROSOMALES (ANTI-PEROXIDASA)",
+          "prioridad": 100
+        }
+      ]
+    },
+    {
+      "terminos": [
+        "poli virus"
+      ],
+      "requiere_confirmacion": false,
+      "candidatos": [
+        {
+          "id_estudio": 688,
+          "nombre": "AC. ANTI POLIO VIRUS I, II Y III",
+          "prioridad": 100
+        }
+      ]
+    },
+    {
+      "terminos": [
+        "rinonucleoproteina"
+      ],
+      "requiere_confirmacion": false,
+      "candidatos": [
+        {
+          "id_estudio": 595,
+          "nombre": "AC. ANTI RIBONUCLEOPROTEINA (RNP)",
+          "prioridad": 100
+        }
+      ]
+    },
+    {
+      "terminos": [
+        "enfermedad de crohn"
+      ],
+      "requiere_confirmacion": true,
+      "pregunta": "¿A cuál de estos estudios te refieres?",
+      "candidatos": [
+        {
+          "id_estudio": 692,
+          "nombre": "AC. ANTI SACCHAROMYCES CEREVISIAE IgA (L)",
+          "prioridad": 100
+        },
+        {
+          "id_estudio": 693,
+          "nombre": "AC. ANTI SACCHAROMYCES CEREVISIAE IgG (L)",
+          "prioridad": 90
+        }
+      ]
+    },
+    {
+      "terminos": [
+        "anticuerpos frente al vha",
+        "havab"
+      ],
+      "requiere_confirmacion": false,
+      "candidatos": [
+        {
+          "id_estudio": 17,
+          "nombre": "AC. ANTI VIRUS HEPATITIS A IGG, IGM",
+          "prioridad": 100
+        }
+      ]
+    },
+    {
+      "terminos": [
+        "vitamina b9",
+        "folato",
+        "acido pteroilmonoglutamico",
+        "5 mthf metilfolato"
+      ],
+      "requiere_confirmacion": false,
+      "candidatos": [
+        {
+          "id_estudio": 34,
+          "nombre": "ACIDO FOLICO",
+          "prioridad": 100
+        }
+      ]
+    },
+    {
+      "terminos": [
+        "lactato"
+      ],
+      "requiere_confirmacion": false,
+      "candidatos": [
+        {
+          "id_estudio": 35,
+          "nombre": "ACIDO LACTICO",
+          "prioridad": 100
+        }
+      ]
+    },
+    {
+      "terminos": [
+        "hormona",
+        "sindrome de conn",
+        "enfermedad de addison"
+      ],
+      "requiere_confirmacion": true,
+      "pregunta": "¿A cuál de estos estudios te refieres?",
+      "candidatos": [
+        {
+          "id_estudio": 455,
+          "nombre": "ALDOSTERONA",
+          "prioridad": 100
+        },
+        {
+          "id_estudio": 456,
+          "nombre": "ALDOSTERONA EN ORINA",
+          "prioridad": 90
+        }
+      ]
+    },
+    {
+      "terminos": [
+        "marcador tumoral de higado",
+        "marcador tumoral de testicular",
+        "marcador tumoral de ovario"
+      ],
+      "requiere_confirmacion": false,
+      "candidatos": [
+        {
+          "id_estudio": 42,
+          "nombre": "ALFAFETOPROTEINA",
+          "prioridad": 100
+        }
+      ]
+    },
+    {
+      "terminos": [
+        "atd3"
+      ],
+      "requiere_confirmacion": false,
+      "candidatos": [
+        {
+          "id_estudio": 112,
+          "nombre": "ANTIDOPING DE 3 PARAMETROS",
+          "prioridad": 100
+        }
+      ]
+    },
+    {
+      "terminos": [
+        "atd3 2"
+      ],
+      "requiere_confirmacion": false,
+      "candidatos": [
+        {
+          "id_estudio": 728,
+          "nombre": "ANTIDOPING DE 3 PARAMETROS (2)",
+          "prioridad": 100
+        }
+      ]
+    },
+    {
+      "terminos": [
+        "atd5"
+      ],
+      "requiere_confirmacion": false,
+      "candidatos": [
+        {
+          "id_estudio": 113,
+          "nombre": "ANTIDOPING DE 5 PARAMETROS",
+          "prioridad": 100
+        }
+      ]
+    },
+    {
+      "terminos": [
+        "atd5 2"
+      ],
+      "requiere_confirmacion": false,
+      "candidatos": [
+        {
+          "id_estudio": 4765,
+          "nombre": "ANTIDOPING DE 5 PARAMETROS*",
+          "prioridad": 100
+        }
+      ]
+    },
+    {
+      "terminos": [
+        "atd6"
+      ],
+      "requiere_confirmacion": false,
+      "candidatos": [
+        {
+          "id_estudio": 714,
+          "nombre": "ANTIDOPING DE 6 PARAMETROS",
+          "prioridad": 100
+        }
+      ]
+    },
+    {
+      "terminos": [
+        "atd7"
+      ],
+      "requiere_confirmacion": false,
+      "candidatos": [
+        {
+          "id_estudio": 114,
+          "nombre": "ANTIDOPING DE 7 PARAMETROS",
+          "prioridad": 100
+        }
+      ]
+    },
+    {
+      "terminos": [
+        "hepa b",
+        "hbeag"
+      ],
+      "requiere_confirmacion": false,
+      "candidatos": [
+        {
+          "id_estudio": 23,
+          "nombre": "ANTIGENO \"E\" DE HEPATITIS B",
+          "prioridad": 100
+        }
+      ]
+    },
+    {
+      "terminos": [
+        "azuc red sr"
+      ],
+      "requiere_confirmacion": false,
+      "candidatos": [
+        {
+          "id_estudio": 466,
+          "nombre": "AZUCARES REDUCTORES",
+          "prioridad": 100
+        }
+      ]
+    },
+    {
+      "terminos": [
+        "meningitis"
+      ],
+      "requiere_confirmacion": true,
+      "pregunta": "¿A cuál de estos estudios te refieres?",
+      "candidatos": [
+        {
+          "id_estudio": 4790,
+          "nombre": "BAAR EN LIQUIDO CEFALORRAQUIDEO (1 MUESTRA)",
+          "prioridad": 100
+        },
+        {
+          "id_estudio": 286,
+          "nombre": "CULTIVO DE LIQUIDO CEFALORRAQUIDEO",
+          "prioridad": 90
+        }
+      ]
+    },
+    {
+      "terminos": [
+        "sangre en esputo",
+        "flema",
+        "toser sangre",
+        "perdida de peso"
+      ],
+      "requiere_confirmacion": true,
+      "pregunta": "¿A cuál de estos estudios te refieres?",
+      "candidatos": [
+        {
+          "id_estudio": 124,
+          "nombre": "BACILOSCOPIA DE EXPECTORACION (1 MUESTRA)",
+          "prioridad": 100
+        },
+        {
+          "id_estudio": 125,
+          "nombre": "BACILOSCOPIA DE EXPECTORACION (2 MUESTRAS)",
+          "prioridad": 90
+        },
+        {
+          "id_estudio": 126,
+          "nombre": "BACILOSCOPIA DE EXPECTORACION (3 MUESTRAS)",
+          "prioridad": 80
+        },
+        {
+          "id_estudio": 127,
+          "nombre": "BACILOSCOPIA DE EXPECTORACION (5 MUESTRAS)",
+          "prioridad": 70
+        }
+      ]
+    },
+    {
+      "terminos": [
+        "pliuria",
+        "hematuria",
+        "disuria"
+      ],
+      "requiere_confirmacion": true,
+      "pregunta": "¿A cuál de estos estudios te refieres?",
+      "candidatos": [
+        {
+          "id_estudio": 458,
+          "nombre": "BACILOSCOPIA EN ORINA (1 MUESTRA)",
+          "prioridad": 100
+        },
+        {
+          "id_estudio": 459,
+          "nombre": "BACILOSCOPIA EN ORINA (3 MUESTRAS)",
+          "prioridad": 90
+        },
+        {
+          "id_estudio": 460,
+          "nombre": "BACILOSCOPIA EN ORINA (5 MUESTRAS)",
+          "prioridad": 80
+        }
+      ]
+    },
+    {
+      "terminos": [
+        "dolor"
+      ],
+      "requiere_confirmacion": true,
+      "pregunta": "¿A cuál de estos estudios te refieres?",
+      "candidatos": [
+        {
+          "id_estudio": 458,
+          "nombre": "BACILOSCOPIA EN ORINA (1 MUESTRA)",
+          "prioridad": 100
+        },
+        {
+          "id_estudio": 459,
+          "nombre": "BACILOSCOPIA EN ORINA (3 MUESTRAS)",
+          "prioridad": 90
+        },
+        {
+          "id_estudio": 460,
+          "nombre": "BACILOSCOPIA EN ORINA (5 MUESTRAS)",
+          "prioridad": 80
+        },
+        {
+          "id_estudio": 286,
+          "nombre": "CULTIVO DE LIQUIDO CEFALORRAQUIDEO",
+          "prioridad": 70
+        },
+        {
+          "id_estudio": 277,
+          "nombre": "CULTIVO DE LIQUIDO PERITONEAL",
+          "prioridad": 60
+        },
+        {
+          "id_estudio": 274,
+          "nombre": "CULTIVO DE PREPUCIO",
+          "prioridad": 50
+        }
+      ]
+    },
+    {
+      "terminos": [
+        "koh20"
+      ],
+      "requiere_confirmacion": false,
+      "candidatos": [
+        {
+          "id_estudio": 1750,
+          "nombre": "BUSQUEDA DE HONGOS CON KOH AL 20%",
+          "prioridad": 100
+        }
+      ]
+    },
+    {
+      "terminos": [
+        "cps1"
+      ],
+      "requiere_confirmacion": false,
+      "candidatos": [
+        {
+          "id_estudio": 180,
+          "nombre": "COPROPARASITOSCOPICO (1 MUESTRA)",
+          "prioridad": 100
+        }
+      ]
+    },
+    {
+      "terminos": [
+        "cps2"
+      ],
+      "requiere_confirmacion": false,
+      "candidatos": [
+        {
+          "id_estudio": 181,
+          "nombre": "COPROPARASITOSCOPICO (2 MUESTRAS)",
+          "prioridad": 100
+        }
+      ]
+    },
+    {
+      "terminos": [
+        "cps3"
+      ],
+      "requiere_confirmacion": false,
+      "candidatos": [
+        {
+          "id_estudio": 182,
+          "nombre": "COPROPARASITOSCOPICO (3 MUESTRAS)",
+          "prioridad": 100
+        }
+      ]
+    },
+    {
+      "terminos": [
+        "crea"
+      ],
+      "requiere_confirmacion": false,
+      "candidatos": [
+        {
+          "id_estudio": 6,
+          "nombre": "CREATININA",
+          "prioridad": 100
+        }
+      ]
+    },
+    {
+      "terminos": [
+        "crea orina"
+      ],
+      "requiere_confirmacion": false,
+      "candidatos": [
+        {
+          "id_estudio": 1768,
+          "nombre": "CREATININA EN ORINA OCASIONAL",
+          "prioridad": 100
+        }
+      ]
+    },
+    {
+      "terminos": [
+        "control prenatal de 32sdg",
+        "prevension sexual"
+      ],
+      "requiere_confirmacion": false,
+      "candidatos": [
+        {
+          "id_estudio": 1773,
+          "nombre": "CULTIVO ANAL",
+          "prioridad": 100
+        }
+      ]
+    },
+    {
+      "terminos": [
+        "comezon"
+      ],
+      "requiere_confirmacion": true,
+      "pregunta": "¿A cuál de estos estudios te refieres?",
+      "candidatos": [
+        {
+          "id_estudio": 1774,
+          "nombre": "CULTIVO CERVICOVAGINAL",
+          "prioridad": 100
+        },
+        {
+          "id_estudio": 267,
+          "nombre": "CULTIVO DE EXUDADO VULVAR",
+          "prioridad": 90
+        }
+      ]
+    },
+    {
+      "terminos": [
+        "ardor en zona vaginal",
+        "presencia secrecion anormal"
+      ],
+      "requiere_confirmacion": false,
+      "candidatos": [
+        {
+          "id_estudio": 1774,
+          "nombre": "CULTIVO CERVICOVAGINAL",
+          "prioridad": 100
+        }
+      ]
+    },
+    {
+      "terminos": [
+        "control prenatal"
+      ],
+      "requiere_confirmacion": true,
+      "pregunta": "¿A cuál de estos estudios te refieres?",
+      "candidatos": [
+        {
+          "id_estudio": 1774,
+          "nombre": "CULTIVO CERVICOVAGINAL",
+          "prioridad": 100
+        },
+        {
+          "id_estudio": 282,
+          "nombre": "CULTIVO DE MYCOPLASMA Y UREAPLASMA",
+          "prioridad": 90
+        }
+      ]
+    },
+    {
+      "terminos": [
+        "supuracion",
+        "calor en zona",
+        "rojez"
+      ],
+      "requiere_confirmacion": false,
+      "candidatos": [
+        {
+          "id_estudio": 426,
+          "nombre": "CULTIVO DE ABSCESO",
+          "prioridad": 100
+        }
+      ]
+    },
+    {
+      "terminos": [
+        "temperatura"
+      ],
+      "requiere_confirmacion": true,
+      "pregunta": "¿A cuál de estos estudios te refieres?",
+      "candidatos": [
+        {
+          "id_estudio": 426,
+          "nombre": "CULTIVO DE ABSCESO",
+          "prioridad": 100
+        },
+        {
+          "id_estudio": 427,
+          "nombre": "CULTIVO DE DIALISIS",
+          "prioridad": 90
+        },
+        {
+          "id_estudio": 283,
+          "nombre": "CULTIVO DE MYCOBACTERIUM TUBERCULOSIS",
+          "prioridad": 80
+        }
+      ]
+    },
+    {
+      "terminos": [
+        "rojecimiento",
+        "dolor o pus en la zona donde el cateter emerge de la piel"
+      ],
+      "requiere_confirmacion": false,
+      "candidatos": [
+        {
+          "id_estudio": 427,
+          "nombre": "CULTIVO DE DIALISIS",
+          "prioridad": 100
+        }
+      ]
+    },
+    {
+      "terminos": [
+        "prevencion de pneumonia",
+        "streptococcus pneumoniae"
+      ],
+      "requiere_confirmacion": false,
+      "candidatos": [
+        {
+          "id_estudio": 270,
+          "nombre": "CULTIVO DE ESPUTO",
+          "prioridad": 100
+        }
+      ]
+    },
+    {
+      "terminos": [
+        "fiebre"
+      ],
+      "requiere_confirmacion": true,
+      "pregunta": "¿A cuál de estos estudios te refieres?",
+      "candidatos": [
+        {
+          "id_estudio": 228,
+          "nombre": "CULTIVO DE EXUDADO FARINGEO",
+          "prioridad": 100
+        },
+        {
+          "id_estudio": 286,
+          "nombre": "CULTIVO DE LIQUIDO CEFALORRAQUIDEO",
+          "prioridad": 90
+        },
+        {
+          "id_estudio": 277,
+          "nombre": "CULTIVO DE LIQUIDO PERITONEAL",
+          "prioridad": 80
+        },
+        {
+          "id_estudio": 5557,
+          "nombre": "CULTIVO DE LIQUIDO PLEURAL",
+          "prioridad": 70
+        },
+        {
+          "id_estudio": 279,
+          "nombre": "CULTIVO DE LIQUIDO SINOVIAL",
+          "prioridad": 60
+        },
+        {
+          "id_estudio": 428,
+          "nombre": "CULTIVO DE PUNTA DE CATETER",
+          "prioridad": 50
+        }
+      ]
+    },
+    {
+      "terminos": [
+        "presencia de secrecion en odio",
+        "comezon en oido",
+        "perdida auditva"
+      ],
+      "requiere_confirmacion": true,
+      "pregunta": "¿A cuál de estos estudios te refieres?",
+      "candidatos": [
+        {
+          "id_estudio": 272,
+          "nombre": "CULTIVO DE EXUDADO OTICO DERECHO",
+          "prioridad": 100
+        },
+        {
+          "id_estudio": 273,
+          "nombre": "CULTIVO DE EXUDADO OTICO IZQUIERDO",
+          "prioridad": 90
+        }
+      ]
+    },
+    {
+      "terminos": [
+        "dolor al contacto sexual",
+        "mal olor"
+      ],
+      "requiere_confirmacion": true,
+      "pregunta": "¿A cuál de estos estudios te refieres?",
+      "candidatos": [
+        {
+          "id_estudio": 291,
+          "nombre": "CULTIVO DE EXUDADO URETRAL",
+          "prioridad": 100
+        },
+        {
+          "id_estudio": 284,
+          "nombre": "CULTIVO DE NEISSERIA GONORRHOEAE",
+          "prioridad": 90
+        }
+      ]
+    },
+    {
+      "terminos": [
+        "presencia de flujo anormal",
+        "dolor en zona genital"
+      ],
+      "requiere_confirmacion": false,
+      "candidatos": [
+        {
+          "id_estudio": 267,
+          "nombre": "CULTIVO DE EXUDADO VULVAR",
+          "prioridad": 100
+        }
+      ]
+    },
+    {
+      "terminos": [
+        "dolro articular"
+      ],
+      "requiere_confirmacion": false,
+      "candidatos": [
+        {
+          "id_estudio": 279,
+          "nombre": "CULTIVO DE LIQUIDO SINOVIAL",
+          "prioridad": 100
+        }
+      ]
+    },
+    {
+      "terminos": [
+        "flema con sangre"
+      ],
+      "requiere_confirmacion": false,
+      "candidatos": [
+        {
+          "id_estudio": 283,
+          "nombre": "CULTIVO DE MYCOBACTERIUM TUBERCULOSIS",
+          "prioridad": 100
+        }
+      ]
+    },
+    {
+      "terminos": [
+        "secrecion ihalina en uretra masculina",
+        "riesgo de aborto"
+      ],
+      "requiere_confirmacion": false,
+      "candidatos": [
+        {
+          "id_estudio": 282,
+          "nombre": "CULTIVO DE MYCOPLASMA Y UREAPLASMA",
+          "prioridad": 100
+        }
+      ]
+    },
+    {
+      "terminos": [
+        "secrecion verdosa"
+      ],
+      "requiere_confirmacion": false,
+      "candidatos": [
+        {
+          "id_estudio": 284,
+          "nombre": "CULTIVO DE NEISSERIA GONORRHOEAE",
+          "prioridad": 100
+        }
+      ]
+    },
+    {
+      "terminos": [
+        "enrojecimiento",
+        "picazon y secrecion fetida"
+      ],
+      "requiere_confirmacion": false,
+      "candidatos": [
+        {
+          "id_estudio": 274,
+          "nombre": "CULTIVO DE PREPUCIO",
+          "prioridad": 100
+        }
+      ]
+    },
+    {
+      "terminos": [
+        "dolor al tacto"
+      ],
+      "requiere_confirmacion": true,
+      "pregunta": "¿A cuál de estos estudios te refieres?",
+      "candidatos": [
+        {
+          "id_estudio": 428,
+          "nombre": "CULTIVO DE PUNTA DE CATETER",
+          "prioridad": 100
+        },
+        {
+          "id_estudio": 1775,
+          "nombre": "CULTIVO DE SECRECION MAMARIA",
+          "prioridad": 90
+        },
+        {
+          "id_estudio": 429,
+          "nombre": "CULTIVO DE SECRECIÓN DE BARTHOLINITIS",
+          "prioridad": 80
+        }
+      ]
+    },
+    {
+      "terminos": [
+        "abcseo en zona vulvar"
+      ],
+      "requiere_confirmacion": false,
+      "candidatos": [
+        {
+          "id_estudio": 429,
+          "nombre": "CULTIVO DE SECRECIÓN DE BARTHOLINITIS",
+          "prioridad": 100
+        }
+      ]
+    },
+    {
+      "terminos": [
+        "requsiito laboral",
+        "consumo de mariscos en mal estado"
+      ],
+      "requiere_confirmacion": false,
+      "candidatos": [
+        {
+          "id_estudio": 275,
+          "nombre": "CULTIVO DE VIBRIO CHOLERAE",
+          "prioridad": 100
+        }
+      ]
+    },
+    {
+      "terminos": [
+        "escamas",
+        "comezon y piel o zona seca"
+      ],
+      "requiere_confirmacion": false,
+      "candidatos": [
+        {
+          "id_estudio": 265,
+          "nombre": "CULTIVO MICOLOGICO",
+          "prioridad": 100
+        }
+      ]
+    },
+    {
+      "terminos": [
+        "control de calida interno",
+        "coliformes"
+      ],
+      "requiere_confirmacion": false,
+      "candidatos": [
+        {
+          "id_estudio": 281,
+          "nombre": "CULTIVO MICROBIOLOGICO DE AGUA",
+          "prioridad": 100
+        }
+      ]
+    },
+    {
+      "terminos": [
+        "agalacti",
+        "embarazo"
+      ],
+      "requiere_confirmacion": false,
+      "candidatos": [
+        {
+          "id_estudio": 269,
+          "nombre": "CULTIVO RECTAL",
+          "prioridad": 100
+        }
+      ]
+    },
+    {
+      "terminos": [
+        "dhea"
+      ],
+      "requiere_confirmacion": false,
+      "candidatos": [
+        {
+          "id_estudio": 478,
+          "nombre": "DEHIDROEPIANDROSTERONA",
+          "prioridad": 100
+        }
+      ]
+    },
+    {
+      "terminos": [
+        "dhea s"
+      ],
+      "requiere_confirmacion": false,
+      "candidatos": [
+        {
+          "id_estudio": 479,
+          "nombre": "DEHIDROEPIANDROSTERONA SULFATO",
+          "prioridad": 100
+        }
+      ]
+    },
+    {
+      "terminos": [
+        "dehidrotes"
+      ],
+      "requiere_confirmacion": false,
+      "candidatos": [
+        {
+          "id_estudio": 5348,
+          "nombre": "DIHIDROTESTOSTERONA",
+          "prioridad": 100
+        }
+      ]
+    },
+    {
+      "terminos": [
+        "mico"
+      ],
+      "requiere_confirmacion": false,
+      "candidatos": [
+        {
+          "id_estudio": 4770,
+          "nombre": "EXAMEN MICOLOGICO",
+          "prioridad": 100
+        }
+      ]
+    },
+    {
+      "terminos": [
+        "gasoart"
+      ],
+      "requiere_confirmacion": false,
+      "candidatos": [
+        {
+          "id_estudio": 558,
+          "nombre": "GASOMETRIA ARTERIAL",
+          "prioridad": 100
+        }
+      ]
+    },
+    {
+      "terminos": [
+        "gasoven"
+      ],
+      "requiere_confirmacion": false,
+      "candidatos": [
+        {
+          "id_estudio": 561,
+          "nombre": "GASOMETRIA VENOSA",
+          "prioridad": 100
+        }
+      ]
+    },
+    {
+      "terminos": [
+        "glob"
+      ],
+      "requiere_confirmacion": false,
+      "candidatos": [
+        {
+          "id_estudio": 86,
+          "nombre": "GLOBULINA SERICA",
+          "prioridad": 100
+        }
+      ]
+    },
+    {
+      "terminos": [
+        "gluc"
+      ],
+      "requiere_confirmacion": false,
+      "candidatos": [
+        {
+          "id_estudio": 1,
+          "nombre": "GLUCOSA",
+          "prioridad": 100
+        }
+      ]
+    },
+    {
+      "terminos": [
+        "gluc 6 fosf"
+      ],
+      "requiere_confirmacion": false,
+      "candidatos": [
+        {
+          "id_estudio": 10,
+          "nombre": "GLUCOSA 6 FOSFATO DESHIDROGENASA",
+          "prioridad": 100
+        }
+      ]
+    },
+    {
+      "terminos": [
+        "gluc capi"
+      ],
+      "requiere_confirmacion": false,
+      "candidatos": [
+        {
+          "id_estudio": 735,
+          "nombre": "GLUCOSA CAPILAR",
+          "prioridad": 100
+        }
+      ]
+    },
+    {
+      "terminos": [
+        "horm antimu"
+      ],
+      "requiere_confirmacion": false,
+      "candidatos": [
+        {
+          "id_estudio": 3750,
+          "nombre": "HORMONA ANTI-MULLERIANA",
+          "prioridad": 100
+        }
+      ]
+    },
+    {
+      "terminos": [
+        "h1n1"
+      ],
+      "requiere_confirmacion": false,
+      "candidatos": [
+        {
+          "id_estudio": 446,
+          "nombre": "INFLUENZA TIPO \"A\" Y \"B\" (PRUEBA RAPIDA)",
+          "prioridad": 100
+        }
+      ]
+    },
+    {
+      "terminos": [
+        "lipa"
+      ],
+      "requiere_confirmacion": false,
+      "candidatos": [
+        {
+          "id_estudio": 220,
+          "nombre": "LIPASA SERICA",
+          "prioridad": 100
+        }
+      ]
+    },
+    {
+      "terminos": [
+        "merc sangre"
+      ],
+      "requiere_confirmacion": false,
+      "candidatos": [
+        {
+          "id_estudio": 5334,
+          "nombre": "MERCURIO EN SANGRE",
+          "prioridad": 100
+        }
+      ]
+    },
+    {
+      "terminos": [
+        "papa"
+      ],
+      "requiere_confirmacion": false,
+      "candidatos": [
+        {
+          "id_estudio": 222,
+          "nombre": "PAPANICOLAOU",
+          "prioridad": 100
+        }
+      ]
+    },
+    {
+      "terminos": [
+        "pept c"
+      ],
+      "requiere_confirmacion": false,
+      "candidatos": [
+        {
+          "id_estudio": 490,
+          "nombre": "PEPTIDO C",
+          "prioridad": 100
+        }
+      ]
+    },
+    {
+      "terminos": [
+        "rel alb glob"
+      ],
+      "requiere_confirmacion": false,
+      "candidatos": [
+        {
+          "id_estudio": 48,
+          "nombre": "RELACION ALBUMINA/GLOBULINA",
+          "prioridad": 100
+        }
+      ]
+    },
+    {
+      "terminos": [
+        "rel bun crea"
+      ],
+      "requiere_confirmacion": false,
+      "candidatos": [
+        {
+          "id_estudio": 537,
+          "nombre": "RELACION BUN/CREATININA",
+          "prioridad": 100
+        }
+      ]
+    },
+    {
+      "terminos": [
+        "retis"
+      ],
+      "requiere_confirmacion": false,
+      "candidatos": [
+        {
+          "id_estudio": 508,
+          "nombre": "RETICULOCITOS",
+          "prioridad": 100
+        }
+      ]
+    },
+    {
+      "terminos": [
+        "rota"
+      ],
+      "requiere_confirmacion": false,
+      "candidatos": [
+        {
+          "id_estudio": 509,
+          "nombre": "ROTAVIRUS EN HECES",
+          "prioridad": 100
+        }
+      ]
+    },
+    {
+      "terminos": [
+        "tupt"
+      ],
+      "requiere_confirmacion": false,
+      "candidatos": [
+        {
+          "id_estudio": 82,
+          "nombre": "T-UPTAKE",
+          "prioridad": 100
+        }
+      ]
+    },
+    {
+      "terminos": [
+        "test libre"
+      ],
+      "requiere_confirmacion": false,
+      "candidatos": [
+        {
+          "id_estudio": 98,
+          "nombre": "TESTOSTERONA LIBRE",
+          "prioridad": 100
+        }
+      ]
+    },
+    {
+      "terminos": [
+        "test total"
+      ],
+      "requiere_confirmacion": false,
+      "candidatos": [
+        {
+          "id_estudio": 97,
+          "nombre": "TESTOSTERONA TOTAL",
+          "prioridad": 100
+        }
+      ]
+    },
+    {
+      "terminos": [
+        "vdrl2"
+      ],
+      "requiere_confirmacion": false,
+      "candidatos": [
+        {
+          "id_estudio": 5583,
+          "nombre": "VDRL",
+          "prioridad": 100
+        }
+      ]
+    },
+    {
+      "terminos": [
+        "vita a"
+      ],
+      "requiere_confirmacion": false,
+      "candidatos": [
+        {
+          "id_estudio": 520,
+          "nombre": "VITAMINA A",
+          "prioridad": 100
+        }
+      ]
+    },
+    {
+      "terminos": [
+        "vita b1"
+      ],
+      "requiere_confirmacion": false,
+      "candidatos": [
+        {
+          "id_estudio": 523,
+          "nombre": "VITAMINA B1 (TIAMINA)",
+          "prioridad": 100
+        }
+      ]
+    },
+    {
+      "terminos": [
+        "vita b12"
+      ],
+      "requiere_confirmacion": false,
+      "candidatos": [
+        {
+          "id_estudio": 519,
+          "nombre": "VITAMINA B12",
+          "prioridad": 100
+        }
+      ]
+    },
+    {
+      "terminos": [
+        "vita b6"
+      ],
+      "requiere_confirmacion": false,
+      "candidatos": [
+        {
+          "id_estudio": 526,
+          "nombre": "VITAMINA B6",
+          "prioridad": 100
+        }
+      ]
+    },
+    {
+      "terminos": [
+        "vita c"
+      ],
+      "requiere_confirmacion": false,
+      "candidatos": [
+        {
+          "id_estudio": 521,
+          "nombre": "VITAMINA C",
+          "prioridad": 100
+        }
+      ]
+    },
+    {
+      "terminos": [
+        "vita d3"
+      ],
+      "requiere_confirmacion": false,
+      "candidatos": [
+        {
+          "id_estudio": 4880,
+          "nombre": "VITAMINA D3",
+          "prioridad": 100
+        }
+      ]
+    },
+    {
+      "terminos": [
+        "vita e"
+      ],
+      "requiere_confirmacion": false,
+      "candidatos": [
+        {
+          "id_estudio": 525,
+          "nombre": "VITAMINA E",
+          "prioridad": 100
+        }
+      ]
+    },
+    {
+      "terminos": [
+        "vita k"
+      ],
+      "requiere_confirmacion": false,
+      "candidatos": [
+        {
+          "id_estudio": 524,
+          "nombre": "VITAMINA K",
+          "prioridad": 100
+        }
+      ]
+    },
+    {
+      "terminos": [
+        "zinc suero"
+      ],
+      "requiere_confirmacion": false,
+      "candidatos": [
+        {
+          "id_estudio": 85,
+          "nombre": "YODO PROTEICO",
+          "prioridad": 100
+        }
+      ]
+    }
+  ]
+}
